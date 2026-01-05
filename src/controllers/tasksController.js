@@ -11,7 +11,7 @@ exports.createTask = (req, res) => {
 };
 
 exports.updateTask = (req, res) => {
-  const task = tasks.find(t => t.id == req.params.id);
+  const task = tasks.find(t => t.id == req.params.id);  // const task = tasks.find(t => t.id === Number(req.params.id)); // strict
   if (!task) return res.status(404).json({ message: 'Not found' });
   Object.assign(task, req.body);
   res.json(task);
