@@ -1,0 +1,14 @@
+# Dependencies lokal
+node_modules
+
+# Logs
+*.log
+
+# Sistem / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Dokumentasi
+*.md
